@@ -16,19 +16,8 @@ Scanner sc=new Scanner(System.in);
 
  */
 
-import java.util.Scanner;
-
 class TaskB1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = 1;
-        System.out.print("Введите целое число: ");
-        if (sc.hasNextInt()) {
-            a = sc.nextInt();
-            a = a*a;
-            System.out.println(a);
-        } else {
-            System.out.println("Вы ввели не целое число");
-        }
+        System.out.println("Hello world!");
     }
 }
