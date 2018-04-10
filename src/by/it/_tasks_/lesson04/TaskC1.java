@@ -37,86 +37,8 @@ package by.it._tasks_.lesson04;
 
 */
 
-import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main(String[] args) {
-        System.out.println("Какую вы хотите зарплату в $$$?");
-        Scanner sc = new Scanner(System.in);
-        int zp = sc.nextInt();
-        double zp1 = 0;
-        double zp2 = 0;
-        if (zp > 300 && zp < 3000) {
-            for (int i = 0; i <= 14; i++) {
-                switch (i) {
-                    case 0:
-                        System.out.println("За месяц 0 начислено $0.0");
-                        break;
-                    case 1:
-                        zp1 = zp + zp / 2;
-                        System.out.println("За январь начислено $" + zp1);
-                        break;
-                    case 2:
-                        zp1 = zp + zp / 2;
-                        System.out.println("За февраль начислено $" + zp1);
-                        break;
-                    case 3:
-                        zp1 = zp + zp / 2;
-                        System.out.println("За март начислено $" + zp1);
-                        break;
-                    case 4:
-                        zp1 = zp + zp / 2;
-                        System.out.println("За апрель начислено $" + zp1);
-                        break;
-                    case 5:
-                        zp1 = zp + zp / 2;
-                        System.out.println("За май начислено $" + zp1);
-                        break;
-                    case 6:
-                        zp2 = zp;
-                        System.out.println("За июнь начислено $" + zp2);
-                        break;
-                    case 7:
-                        zp2 = zp;
-                        System.out.println("За июль начислено $" + zp2);
-                        break;
-                    case 8:
-                        zp2 = zp;
-                        System.out.println("За август начислено $" + zp2);
-                        break;
-                    case 9:
-                        zp1 = zp + zp / 2;
-                        System.out.println("За сентябрь начислено $" + zp1);
-                        break;
-                    case 10:
-                        zp1 = zp + zp / 2;
-                        System.out.println("За октябрь начислено $" + zp1);
-                        break;
-                    case 11:
-                        zp1 = zp + zp / 2;
-                        System.out.println("За ноябрь начислено $" + zp1);
-                        break;
-                    case 12:
-                        zp1 = zp + zp / 2;
-                        System.out.println("За декабрь начислено $" + zp1);
-                        break;
-                    case 13:
-                        System.out.println("За месяц 13 начислено $0.0");
-                        break;
-                    case 14:
-                        System.out.println("За месяц 14 начислено $0.0");
-                        break;
-                    }
-                if (zp1 == 666 || zp2 == 666) {
-                    break;
-                }
-            }
-        }
-        else {
-            System.out.println("Мы вам перезвоним!");
-        }
-
-    }
 
 
 }
