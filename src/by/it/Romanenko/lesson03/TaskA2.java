@@ -23,10 +23,7 @@ Lesson 03. Task A2. Стихотворение
 class TaskA2 {
     public static void main(String[] args) {
         System.out.println("Мое любимое стихотворение:");
-        System.out.println("fdshdfjgfykjfukfdhfgdgdgds");
-        System.out.println("drhdfjgfkjgfhfdgdgdgdsgd");
-        System.out.println("dhdfjgfukjgfjdhfgssgh");
-        System.out.println("dhdfyjgududtyjgykhikihgkf");
-    }
+        System.out.println("fdshd fjgfykjf ukfdhf gdgdgds \ndrhdfj gfkjgf hfdgdgdg dsgd \ndrhd fjgfkjgf hfdgdgd gdsgd \ndhdf jgfuk jgf jdhfgssgh");
+        }
 
 }
