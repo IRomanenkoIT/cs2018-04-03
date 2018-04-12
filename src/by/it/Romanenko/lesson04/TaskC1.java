@@ -38,23 +38,43 @@ package by.it.Romanenko.lesson04;
 */
 
 
+import java.util.Scanner;
+
 public class TaskC1 {
     public static void main(String[] args) {
-        System.out.println("Мы вам перезвоним!");
-        System.out.println("За месяц 0 начислено $0.0");
-        System.out.println("За январь начислено $3000.0");
-        System.out.println("За февраль начислено $3000.0");
-        System.out.println("За март начислено $3000.0");
-        System.out.println("За апрель начислено $3000.0");
-        System.out.println("За май начислено $3000.0");
-        System.out.println("За июнь начислено $2000.0");
-        System.out.println("За июль начислено $2000.0");
-        System.out.println("За август начислено $2000.0");
-        System.out.println("За сентябрь начислено $3000.0");
-        System.out.println("За ноябрь начислено $3000.0");
-        System.out.println("За декабрь начислено $3000.0");
-        System.out.println("За месяц 13 начислено $0.0");
-        System.out.println("За месяц 14 начислено $0.0");
+        System.out.println("Какую вы хотите зарплату в $$$");
+        Scanner scanner=new Scanner(System.in);
+        double zzz=scanner.nextInt();
+        double rez=0;
+        if (zzz<300 || zzz>3000)
+            System.out.println("Мы вам перезвоним!");
+        else
+        for (int month = 0; month <= 14; month++) {
+            String strMonth;
+            if (month<6 || month>8) rez=zzz*1.5; else rez=zzz;
+            switch (month) {
+                case 1: strMonth="январь"; break;
+                case 2: strMonth="февраль"; break;
+                case 3: strMonth="март"; break;
+                case 4: strMonth="апрель"; break;
+                case 5: strMonth="май"; break;
+                case 6: strMonth="июнь"; break;
+                case 7: strMonth="июль"; break;
+                case 8: strMonth="август"; break;
+                case 9: strMonth="сентябрь"; break;
+                case 10: strMonth="октябрь"; break;
+                case 11: strMonth="ноябрь"; break;
+                case 12: strMonth="декабрь"; break;
+                default: {strMonth="месяц "+month; rez=0;}
+            }
+
+
+            System.out.println("За "+strMonth+" начислено $"+rez);
+            if (rez==666) break;
+
+        }
+
+
     }
 
 }
