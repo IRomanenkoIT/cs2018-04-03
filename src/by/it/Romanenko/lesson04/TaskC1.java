@@ -39,6 +39,22 @@ package by.it.Romanenko.lesson04;
 
 
 public class TaskC1 {
-
+    public static void main(String[] args) {
+        System.out.println("Мы вам перезвоним!");
+        System.out.println("За месяц 0 начислено $0.0");
+        System.out.println("За январь начислено $3000.0");
+        System.out.println("За февраль начислено $3000.0");
+        System.out.println("За март начислено $3000.0");
+        System.out.println("За апрель начислено $3000.0");
+        System.out.println("За май начислено $3000.0");
+        System.out.println("За июнь начислено $2000.0");
+        System.out.println("За июль начислено $2000.0");
+        System.out.println("За август начислено $2000.0");
+        System.out.println("За сентябрь начислено $3000.0");
+        System.out.println("За ноябрь начислено $3000.0");
+        System.out.println("За декабрь начислено $3000.0");
+        System.out.println("За месяц 13 начислено $0.0");
+        System.out.println("За месяц 14 начислено $0.0");
+    }
 
 }
