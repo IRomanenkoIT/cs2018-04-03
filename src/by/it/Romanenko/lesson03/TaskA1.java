@@ -42,6 +42,7 @@ class TaskA1 {
                 int j=scanner.nextInt();
                 int sum=i+j;
                 int sub=i-j;
+
                 int mul=i*j;
                 int div=i/j;
                 int mod=i%j;
