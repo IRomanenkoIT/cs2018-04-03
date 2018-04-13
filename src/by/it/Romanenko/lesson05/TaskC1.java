@@ -10,17 +10,37 @@ package by.it.Romanenko.lesson05;
     Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 */
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
 
-
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<Integer> list=new ArrayList<>();
+        ArrayList<Integer> l3=new ArrayList<>();
+        ArrayList<Integer> l2=new ArrayList<>();
+        ArrayList<Integer> l4=new ArrayList<>();
+        for (int i=0;i<20;i++)
+            list.add(Integer.parseInt(reader.readLine()));
+        for (int i=0;i<20;i++)
+            if (list.get(i)%2==0)
+                l2.add(list.get(i));
+        for (int i=0;i<20;i++)
+            if (list.get(i)%3==0)
+                l3.add(list.get(i));
+        for (int i=0;i<20;i++)
+            if ((list.get(i)%3!=0)&(list.get(i)%2!=0))
+                l4.add(list.get(i));
+        printList(l3);
+        printList(l2);
+        printList(l4);
     }
-
-    private static void printList(List<Integer> list) {
-        for (Integer aList : list) System.out.println(aList);
+    public static void printList(List<Integer> list) {
+        for (int i=0; i<list.size();i++)
+            System.out.println(list.get(i));
     }
 
 

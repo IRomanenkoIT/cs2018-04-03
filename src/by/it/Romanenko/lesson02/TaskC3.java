@@ -1,5 +1,7 @@
 package by.it.Romanenko.lesson02;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 /*
@@ -33,16 +35,14 @@ import java.util.Scanner;
 */
 class TaskC3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int weightEarth = 1;
-        System.out.println("Ввод:");
-        weightEarth = sc.nextInt();
-        System.out.println("Вывод:");
-        System.out.println(getWeight(75));
+        Scanner scan = new Scanner(System.in);
+        int value = scan.nextInt();
+        System.out.println(getWeight(value));
     }
 
-    public static double getWeight(int weightEarth) {
-        double weigthMoon = weightEarth * 3.86 / 9.81;
-        return Math.round(weigthMoon);
+    public static double getWeight(int weight) {
+        double Eweight = weight * 3.86 / 9.81;
+        double Mweight = new BigDecimal(Eweight).setScale(2, RoundingMode.HALF_DOWN).doubleValue();
+        return Mweight;
     }
 }
